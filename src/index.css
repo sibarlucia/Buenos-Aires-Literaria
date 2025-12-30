@@ -39,8 +39,8 @@ header h2 {
 /* Card Container */
 .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
 }
 
 /* Card */
@@ -61,7 +61,7 @@ header h2 {
 }
 
 .card-image-placeholder {
-  height: 180px;
+  height: 220px;
   background-color: #e0e0e0;
 }
 

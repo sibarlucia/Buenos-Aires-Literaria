@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
+import { literaryWorks } from '../data/literaryWorks';
 
 const Map = () => {
   const { id } = useParams();
+  const work = literaryWorks.find((w) => w.id === parseInt(id));
 
   return (
     <div className="map-page">
@@ -10,13 +12,18 @@ const Map = () => {
         <Link to="/" className="back-link">
           &larr; Volver
         </Link>
-        <h1>Mapa del Recorrido Literario</h1>
+        <h1>{work.title}</h1>
       </header>
       <main>
-        <div className="map-placeholder">
-          <p>El mapa para la obra con ID: {id} irá aquí.</p>
-          <p>Se requiere una clave de API de Google Maps para mostrar el mapa.</p>
-        </div>
+        <iframe
+          src={work.mapUrl}
+          width="100%"
+          height="600"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
       </main>
     </div>
   );

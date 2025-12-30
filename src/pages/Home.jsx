@@ -1,13 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import Card from '../components/Card';
-
-const literaryWorks = [
-  { id: 1, title: 'LAS NOCHES DE FLORES', author: 'César Aira' },
-  { id: 2, title: 'DIARIO DE LA GUERRA DEL CERDO', author: 'Adolfo Bioy Casares' },
-  { id: 3, title: 'CIRCE', author: 'Julio Cortázar' },
-  { id: 4, title: 'EL NERVIO ÓPTICO', author: 'María Gainza' },
-];
+import { literaryWorks } from '../data/literaryWorks';
 
 const Home = () => {
   return (
