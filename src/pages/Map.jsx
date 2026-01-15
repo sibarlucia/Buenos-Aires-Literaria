@@ -1,10 +1,14 @@
 import React from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useParams, Navigate } from 'react-router-dom';
 import { literaryWorks } from '../data/literaryWorks';
 
 const Map = () => {
   const { id } = useParams();
   const work = literaryWorks.find((w) => w.id === parseInt(id));
+
+  if (!work) {
+    return <Navigate to="/" />;
+  }
 
   return (
     <div className="map-page">

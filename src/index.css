@@ -1,8 +1,8 @@
 /* General Styles */
 body {
-  font-family: 'Georgia', serif;
-  background-color: #F5F5DC; /* Beige */
-  color: #000000; /* Black */
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #E6E6FA; /* Lavender */
+  color: #FFFDD0; /* Cream */
   margin: 0;
   padding: 0;
   min-height: 100vh;
@@ -22,16 +22,17 @@ header {
 }
 
 header h1 {
-  font-family: 'Aguafina Script', cursive;
-  font-size: 5rem;
-  color: #B22222; /* Firebrick */
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #FFFDD0; /* Cream */
   margin: 0;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 
 header h2 {
   font-size: 1.5rem;
-  color: #000080; /* Navy */
+  color: #F5F5F5; /* WhiteSmoke */
   margin-top: 0;
 }
 
@@ -48,21 +49,21 @@ header h2 {
   padding: 0;
   margin: 0;
   gap: 2rem;
-  border-top: 2px solid #000080;
-  border-bottom: 2px solid #000080;
+  border-top: 2px solid #9370DB; /* MediumPurple */
+  border-bottom: 2px solid #9370DB; /* MediumPurple */
   padding: 0.5rem 2rem;
 }
 
 .navbar-list a {
   text-decoration: none;
-  color: #000080; /* Navy */
+  color: #FFFDD0; /* Cream */
   font-size: 1.2rem;
   font-weight: bold;
   transition: color 0.3s;
 }
 
 .navbar-list a:hover {
-  color: #B22222; /* Firebrick */
+  color: #F5F5F5; /* WhiteSmoke */
   text-decoration: underline;
 }
 
@@ -75,8 +76,8 @@ header h2 {
 
 /* Card */
 .card {
-  background-color: #FFFFF0; /* Ivory */
-  border: 2px solid #000080; /* Navy */
+  background-color: #D8BFD8; /* Thistle */
+  border: 2px solid #9370DB; /* MediumPurple */
   border-radius: 10px;
   overflow: hidden;
   text-decoration: none;
@@ -92,7 +93,7 @@ header h2 {
 
 .card-image-placeholder {
   height: 220px;
-  background-color: #e0e0e0;
+  background-color: #C3B1C3; /* Lighter Thistle for placeholder */
 }
 
 .card-content {
@@ -101,23 +102,24 @@ header h2 {
 }
 
 .card-content h3 {
-  font-family: 'Aguafina Script', cursive;
-  font-size: 2rem;
-  color: #B22222; /* Firebrick */
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #FFFDD0; /* Cream */
   margin: 0 0 0.5rem;
 }
 
 .card-content p {
   margin: 0;
-  color: #000000;
-  font-weight: bold;
+  color: #F5F5F5; /* WhiteSmoke */
+  font-weight: normal;
 }
 
 /* Map Page */
 .map-page {
   padding: 2rem;
-  background-color: #FFFFF0; /* Ivory */
-  border: 2px solid #000080;
+  background-color: #D8BFD8; /* Thistle */
+  border: 2px solid #9370DB; /* MediumPurple */
   border-radius: 8px;
 }
 
@@ -128,19 +130,19 @@ header h2 {
 
 .back-link {
   text-decoration: none;
-  color: #000080; /* Navy */
+  color: #FFFDD0; /* Cream */
   font-size: 1.2rem;
   font-weight: bold;
   margin-right: 1.5rem;
 }
 
 .back-link:hover {
-  color: #B22222; /* Firebrick */
+  color: #F5F5F5; /* WhiteSmoke */
   text-decoration: underline;
 }
 
 .map-placeholder {
   height: 500px;
   border-radius: 8px;
-  border: 1px solid #ddd;
+  border: 1px solid #9370DB;
 }
