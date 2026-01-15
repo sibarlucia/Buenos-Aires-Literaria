@@ -32,7 +32,7 @@ header h1 {
 
 header h2 {
   font-size: 1.5rem;
-  color: #F5F5F5; /* WhiteSmoke */
+  color: gold;
   margin-top: 0;
 }
 
@@ -72,6 +72,11 @@ header h2 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
+  background-image: url('/assets/jacarandas.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+  border-radius: 10px;
 }
 
 /* Card */
@@ -99,6 +104,7 @@ header h2 {
 .card-content {
   padding: 1.5rem;
   text-align: center;
+  background-color: #9370DB; /* MediumPurple */
 }
 
 .card-content h3 {
@@ -111,7 +117,7 @@ header h2 {
 
 .card-content p {
   margin: 0;
-  color: #F5F5F5; /* WhiteSmoke */
+  color: gold;
   font-weight: normal;
 }
 
