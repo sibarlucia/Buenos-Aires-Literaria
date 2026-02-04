@@ -10,6 +10,11 @@ import Contact from './pages/Contact';
 function App() {
   return (
     <Router>
+      <div className="background-animation">
+        {[...Array(15)].map((_, i) => (
+          <div key={i} className="petal"></div>
+        ))}
+      </div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/map/:id" element={<Map />} />

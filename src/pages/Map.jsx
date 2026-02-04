@@ -12,21 +12,28 @@ const Map = () => {
 
   return (
     <div className="map-page">
-      <header>
+      <header className="map-header">
         <Link to="/" className="back-link">
           &larr; Volver
         </Link>
-        <h1>{work.title}</h1>
+        <div className="header-info">
+          <h1>{work.title}</h1>
+          <p className="points-count">{work.pointsCount} puntos de interés</p>
+          <a href={work.directMapUrl} target="_blank" rel="noopener noreferrer" className="maps-button">
+            Abrir recorrido en Maps
+          </a>
+        </div>
       </header>
-      <main>
+      <main className="map-container-full">
         <iframe
           src={work.mapUrl}
           width="100%"
-          height="600"
+          height="700"
           style={{ border: 0 }}
           allowFullScreen=""
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
+          title={work.title}
         ></iframe>
       </main>
     </div>
